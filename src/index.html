@@ -6,15 +6,24 @@
     <title>Nathaniel | Dev</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+
     
 </head>
 <body>
     <nav id="nav">
-        <a href="#top"> About </a>
-        <a href="#projects"> Projects </a>
-        <a href="#skills"> Skills </a>
-        <a href="#contact"> Contact </a>
+            <div class="topnav" id="myTopnav">
+                    <a href="#top"> About </a>
+                    <a href="#projects"> Projects </a>
+                    <a href="#skills"> Skills </a>
+                    <a href="#contact"> Contact </a>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                      <i class="fa fa-bars"></i>
+                    </a>
+            </div>
     </nav>
+    
     <div class="top">
     </div>
     <div class="container">
@@ -78,6 +87,24 @@
             </a>
             
     </footer>
+
+    <script>
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
+        
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(e) {
+          if (!e.target.matches('.dropbtn')) {
+          var myDropdown = document.getElementById("myDropdown");
+            if (myDropdown.classList.contains('show')) {
+              myDropdown.classList.remove('show');
+            }
+          }
+        }
+        </script>
     
 </body>
 </html>
