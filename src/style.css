@@ -208,15 +208,14 @@ nav a {
 }
 
 
-@media only screen and (min-width: 900px) {
+@media only screen and (max-width: 900px) {
     body {
         padding-left: 30px;
         padding-right: 30px;
         background-color: black;
 
     }
-
-    .burgermenu {
+    nav a {
         display: none;
     }
 
@@ -227,7 +226,7 @@ nav a {
     }
 
     .nav {
-        font-size: 15px;
+        font-size: 10px;
     }
 
     h3 {
@@ -239,12 +238,9 @@ nav a {
 
 }
 
-@media only screen and (max-width: 400px) {
-    .nav .navbar a {
+@media only screen and (min-width: 899px) {
+    .burgermenu {
         display: none;
-    }
-    .nav .burgermenu {
-        display: show;
     }
 
 }
